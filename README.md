@@ -3,6 +3,11 @@
 An intelligent web application that **transcribes**, **summarizes** Upload an audio recording of a meeting, lecture, or conversation and receive a concise summary and full transcript instantly.
 
 ---
+![App Screenshot](./frontend/public/p1.png)
+![App Screenshot](./frontend/public/p2.png)
+![App Screenshot](./frontend/public/p3.png)
+
+
 
 ## 🚀 Features
 
