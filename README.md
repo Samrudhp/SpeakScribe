@@ -12,7 +12,7 @@ An intelligent web application that **transcribes**, **summarizes** Upload an au
 ## 🚀 Features
 
 ### 🔧 Backend (FastAPI + TensorFlow)
-- **/transcribe**: Upload audio and receive transcribed text (via OpenAI Whisper).
+- **/transcribe**: Upload audio and receive transcribed text (via AssemblyAI).
 - **/summarize**: Input text and receive a summary using TensorFlow-based models (T5/BART).
 - **/process**: Unified endpoint for transcription + summarization.
 
