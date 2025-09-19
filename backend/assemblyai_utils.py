@@ -1,7 +1,7 @@
 import requests
 import time
 
-ASSEMBLYAI_API_KEY = '02cab1cf342e41e9862b750c33fabb4c'
+ASSEMBLYAI_API_KEY = 'give ur own'
 
 def transcribe_audio(file_path: str) -> str:
     headers = {'authorization': ASSEMBLYAI_API_KEY} 
