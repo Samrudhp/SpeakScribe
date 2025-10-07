@@ -1,3 +1,89 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    @apply bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100 min-h-screen;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-white/60 backdrop-blur-xl border border-white/40 rounded-3xl shadow-glass;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  
+  .glass-card:hover {
+    @apply shadow-glass-lg border-white/60 bg-white/70;
+    transform: translateY(-2px);
+  }
+
+  .glass {
+    @apply backdrop-blur-md bg-white/40 border border-white/50 rounded-2xl;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary-600 to-primary-500 text-white font-semibold px-6 py-3 rounded-xl;
+    @apply hover:from-primary-700 hover:to-primary-600 transition-all duration-300;
+    @apply shadow-lg hover:shadow-glow active:scale-95 transform;
+  }
+
+  .btn-secondary {
+    @apply bg-white/80 backdrop-blur-sm text-primary-700 font-semibold px-6 py-3 rounded-xl;
+    @apply hover:bg-white transition-all duration-300 border border-primary-200;
+    @apply shadow-md hover:shadow-lg active:scale-95 transform;
+  }
+
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary-600 via-purple-600 to-accent-600 bg-clip-text text-transparent;
+  }
+
+  .metric-card {
+    @apply glass-card p-6 space-y-3;
+  }
+
+  .metric-value {
+    @apply text-3xl font-bold bg-gradient-to-br from-primary-600 to-purple-600 bg-clip-text text-transparent;
+  }
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #6366f1, #a855f7);
+  border-radius: 10px;
+}
+
+@keyframes blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(20px, -50px) scale(1.1); }
+  50% { transform: translate(-20px, 20px) scale(0.9); }
+  75% { transform: translate(50px, 50px) scale(1.05); }
+}
+
+.animation-delay-2000 {
+  animation-delay: 2s;
+}
+
+.animation-delay-4000 {
+  animation-delay: 4s;
+}
