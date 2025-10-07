@@ -4,9 +4,9 @@ A cutting-edge web application that **transcribes**, **analyzes**, and **summari
 
 ---
 
-![App Screenshot](./frontend/public/p1.png)
-![App Screenshot](./frontend/public/p2.png)
-![App Screenshot](./frontend/public/p3.png)
+![App Screenshot](./demo-images/demo1.png)
+![App Screenshot](./demo-images/demo2.png)
+
 
 ## ✨ Features
 
